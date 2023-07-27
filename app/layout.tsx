@@ -94,7 +94,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body
         className={`${inter.variable}  border-0 min-h-full bg-white font-sans antialiased transition-colors dark:bg-blue-800`}
       >
-        <div className="border-0 border-green-500 mx-5 flex flex-col gap-0 px-0 my-14 lg:mb-0 md:mb-8 md:px-0 md:mx-8 lg:mx-10 xl:mx-20 lg:px-0 xl:px-15">
+        <div className="border-0 border-green-500 mx-2.5 flex flex-col gap-0 px-0 md:my-8 lg:mb-0 mb-4 md:px-0 md:mx-8 lg:mx-10 xl:mx-20 lg:px-0 xl:px-15">
           <Suspense>
             <GoogleTagMgr />
             <Analytics />

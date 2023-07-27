@@ -7,7 +7,7 @@ import MenuNavbar from '@/components/PageNavBar';
 import { GetStaticPropsContext } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'My WOrk',
   // description: 'NextJS + TailwindCSS minimalist starter kit',
   // openGraph: {
   //   title: 'NextJS + TailwindCSS minimalist starter kit',
@@ -25,14 +25,11 @@ export const metadata: Metadata = {
   //   type: 'website',
   // },
 };
-interface AboutPageProps {
-  active: string;
-}
 
-export default function About() {
+export default function Work() {
   return (
     <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
-      <MenuNavbar active="" menuType="about" />
+      <MenuNavbar active="My WOrk" menuType="work" />
 
     </section>
   );

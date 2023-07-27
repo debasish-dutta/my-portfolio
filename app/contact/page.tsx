@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function Index() {
   return (
-    <section className="min-h-screen bg-white dark:bg-gray-900">
+    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
                 <Heading title="Let's Talk" content='' />
     <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-10">

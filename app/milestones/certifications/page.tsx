@@ -1,13 +1,9 @@
-import Notebook from '@/components/Notebook';
-
-// types
-import type { Metadata } from 'next';
-import Heading from '@/components/Pagefragments/Heading';
+import { FC } from 'react';
 import MenuNavbar from '@/components/PageNavBar';
-import { GetStaticPropsContext } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'Certification',
   // description: 'NextJS + TailwindCSS minimalist starter kit',
   // openGraph: {
   //   title: 'NextJS + TailwindCSS minimalist starter kit',
@@ -25,15 +21,14 @@ export const metadata: Metadata = {
   //   type: 'website',
   // },
 };
-interface AboutPageProps {
-  active: string;
-}
 
-export default function About() {
+const Certi: FC = () => {
   return (
     <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
-      <MenuNavbar active="" menuType="about" />
-
+      <MenuNavbar active="Certifications"  menuType="mil" />
+      {/* Add your content here */}
     </section>
   );
-}
+};
+
+export default Certi;

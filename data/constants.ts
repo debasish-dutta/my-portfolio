@@ -59,11 +59,33 @@ export const meta: Meta = {
 export const menuItems = [
   { path: '/', name: 'Home', new: false },
   { path: '/about', name: 'About', new: false },
-  { path: '/skills', name: 'Skills', new: false },
+  { path: '/my-work', name: 'My Work', new: false },
   { path: '/milestones', name: 'Milestones', new: false },
-  { path: '/projects', name: 'Projects', new: false },
   { path: '/contact', name: 'Contact', new: false },
 ];
+
+export const aboutMenuItems = [
+  { path: '/about', name: 'About', new: false },
+  { path: '/about/skills', name: 'Skills', new: false },
+  { path: '/about/stats', name: 'Stats', new: false },
+  { path: '/about/milestones', name: 'Milestones', new: false },
+]
+
+export const workMenuItems = [
+  { path: '/my-work', name: 'My Work', new: false },
+  { path: '/my-work/experience', name: 'Experience', new: false },
+  { path: '/my-work/projects', name: 'Projects', new: false },
+  { path: '/my-work/publications', name: 'Publications', new: false },
+  // { path: '/my-work/certifications', name: 'Certifications', new: false },
+  // { path: '/my-work/achivements', name: 'Achivements', new: false },
+]
+
+export const milMenuItems = [
+  { path: '/milestones', name: 'Milestones', new: false },
+  { path: '/milestones/education', name: 'Education', new: false },
+  { path: '/milestones/certifications', name: 'Certifications', new: false },
+  { path: '/milestones/achivements', name: 'Achivements', new: false },
+]
 
 export const footerItems = {
   resources: [

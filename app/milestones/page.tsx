@@ -1,8 +1,13 @@
+import Notebook from '@/components/Notebook';
+
 // types
 import type { Metadata } from 'next';
+import Heading from '@/components/Pagefragments/Heading';
+import MenuNavbar from '@/components/PageNavBar';
+import { GetStaticPropsContext } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'My WOrk',
   // description: 'NextJS + TailwindCSS minimalist starter kit',
   // openGraph: {
   //   title: 'NextJS + TailwindCSS minimalist starter kit',
@@ -21,6 +26,11 @@ export const metadata: Metadata = {
   // },
 };
 
-export default function Index() {
-  return <h1 className='mb-12 text-6xl text-gray-900 dark:text-gray-100'>Milestones</h1>;
+export default function Milestones() {
+  return (
+    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
+      <MenuNavbar active="Milestones" menuType="mil" />
+
+    </section>
+  );
 }

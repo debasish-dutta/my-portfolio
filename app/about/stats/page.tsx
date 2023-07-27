@@ -1,8 +1,9 @@
-// types
+import { FC } from 'react';
+import MenuNavbar from '@/components/PageNavBar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Projects',
   // description: 'NextJS + TailwindCSS minimalist starter kit',
   // openGraph: {
   //   title: 'NextJS + TailwindCSS minimalist starter kit',
@@ -21,6 +22,13 @@ export const metadata: Metadata = {
   // },
 };
 
-export default function Index() {
-  return <h1 className='mb-12 text-6xl text-gray-900 dark:text-gray-100'>Skills</h1>;
-}
+const StatsPage: FC = () => {
+  return (
+    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
+      <MenuNavbar active="Stats"  menuType="about" />
+      {/* Add your content here */}
+    </section>
+  );
+};
+
+export default StatsPage;

@@ -1,10 +1,9 @@
-// types
+import { FC } from 'react';
+import MenuNavbar from '@/components/PageNavBar';
 import type { Metadata } from 'next';
 
-import Heading from '@/components/Pagefragments/Heading';
-
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Projects',
   // description: 'NextJS + TailwindCSS minimalist starter kit',
   // openGraph: {
   //   title: 'NextJS + TailwindCSS minimalist starter kit',
@@ -23,8 +22,13 @@ export const metadata: Metadata = {
   // },
 };
 
-export default function Index() {
-  return <>
-  <Heading title='projects' content=''/>;
-  </>
-}
+const Certi: FC = () => {
+  return (
+    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
+      <MenuNavbar active="Certifications"  menuType="work" />
+      {/* Add your content here */}
+    </section>
+  );
+};
+
+export default Certi;
