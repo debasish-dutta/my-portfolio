@@ -25,33 +25,33 @@ export const metadata: Metadata = {
 
 export default function Index() {
   return (
-    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
-                <Heading title="Let's Talk" content='' />
-    <div className="container px-6 py-10 mx-auto">
+    <section className="border-0 border-blue-500 min-h-fit bg-light-background dark:bg-dark-background">
+                <Heading title="Let's Talk" content='Ask me everything and I would love to hear from you' />
+    <div className="container px-6 py-0 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-10">
             <div className="lg:w-1/2 lg:mx-10">
-                <p className="mt-4 text-gray-500 dark:text-gray-400">
+                {/* <p className="mt-4 text-pri">
                 Ask me everything and I would love to hear from you
-                </p>
+                </p> */}
                 <form className="mt-12">
                     <div className="-mx-2 md:items-center md:flex">
                         <div className="flex-1 px-2">
-                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
+                            {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label> */}
                             <input type="text" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div className="flex-1 px-2 mt-4 md:mt-0">
-                            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
+                            {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label> */}
                             <input type="email" placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
                     </div>
 
                     <div className="w-full mt-4">
-                        <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
+                        {/* <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label> */}
                         <textarea className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                     </div>
 
-                    <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                    <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-primary rounded-md hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                         get in touch
                     </button>
                 </form>
@@ -61,7 +61,7 @@ export default function Index() {
                 <Image width="1024" height="1024" className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src="" alt="" layout="intrinsic"
         quality="100"/>
 
-                <div className="mt-6 space-y-8 md:mt-8">
+                {/* <div className="mt-6 space-y-8 md:mt-8">
                     <p className="flex items-start -mx-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -89,7 +89,7 @@ export default function Index() {
 
                         <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">acb@example.com</span>
                     </p>
-                </div>
+                </div> */}
 
                 
             </div>

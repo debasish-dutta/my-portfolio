@@ -32,48 +32,55 @@ const MenuNavbar: React.FC<MenuNavbarProps> = ({ active, menuType }) => {
          <ul className='text-base font-normal md:text-xl flex items-center space-x-4'>
             {menuType === 'about' ? (
                // Replace with aboutMenuItems
-               aboutMenuItems.filter((item) => item.name !== active).map((item, index) => (
-                  <li className='text-s' key={`${index}`}>
+               aboutMenuItems.filter((item) => item.name !== active).map((item, index) => {
+                  const Icon = item.icon
+                  return (<li className='text-md' key={`${index}`}>
                      <NavLink
                         active={active}
                         href={item.path}
                         exact
                         className='transition duration-300 text-hover'
                         >
-                        {item.name}
+                        {/* {item.name} */}
+                        <Icon />
                      </NavLink>
-                  </li>
-               ))
+                  </li>)
+               })
             ) : menuType === 'work' ? (
                // Replace with workMenuItems
-               workMenuItems.filter((item) => item.name !== active).map((item, index) => (
-                  <li className='text-md' key={`${index}`}>
+               workMenuItems.filter((item) => item.name !== active).map((item, index) => {
+                  const Icon = item.icon
+                  return (<li className='text-md' key={`${index}`}>
                      <NavLink
                         active={active}
                         href={item.path}
                         exact
                         className='transition duration-300 text-hover'
                      >
-                        {item.name}
+                        {/* {item.name} */}
+                        <Icon />
                      </NavLink>
                   </li>
-               ))
+               )})
             ): menuType === 'mil' ? (
                // Replace with milMenuItems
                milMenuItems
                  .filter((item) => item.name !== active)
-                 .map((item, index) => (
-                   <li className='text-md' key={`${index}`}>
+                 .map((item, index) => {
+                  const Icon = item.icon
+                  return (
+                  <li className='text-md' key={`${index}`}>
                      <NavLink
                        active={active}
                        href={item.path}
                        exact
                        className='transition duration-300 text-hover'
                      >
-                       {item.name}
+                       {/* {item.name} */}
+                       <Icon />
                      </NavLink>
                    </li>
-                 ))
+                 )})
              ) : null}
          </ul>
       </div>

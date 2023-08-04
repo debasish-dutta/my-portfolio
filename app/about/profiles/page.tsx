@@ -3,7 +3,7 @@ import MenuNavbar from '@/components/PageNavBar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Projects',
+  title: 'Profiles',
   // description: 'NextJS + TailwindCSS minimalist starter kit',
   // openGraph: {
   //   title: 'NextJS + TailwindCSS minimalist starter kit',
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   // },
 };
 
-const Milestones: FC = () => {
+const Profiles: FC = () => {
   return (
-    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
-      <MenuNavbar active="Milestones"  menuType="about" />
+    <section className="border-2 border-blue-500 min-h-screen">
+      <MenuNavbar active="Profiles"  menuType="about" />
       {/* Add your content here */}
     </section>
   );
 };
 
-export default Milestones;
+export default Profiles;

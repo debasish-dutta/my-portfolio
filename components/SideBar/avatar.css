@@ -1,0 +1,48 @@
+/* components/styles.module.css */
+:root {
+    --border: 5px;
+    --color1: #FC9F5B;
+    --color2: #24A6A8;
+    --from: 30deg;
+    --distance: 46%;
+  }
+.img-wrap {
+    position: relative;
+    padding: 15px;
+}
+  
+.img-wrap::after {
+    content: '';
+    border-radius: 999px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(
+      from var(--from),
+      var(--color1),
+      var(--color2) var(--distance),
+      transparent var(--distance)
+    );
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+    mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+    );
+}
+  
+  .img {
+    border-radius: 999px;
+    display: block;
+    width: calc(100vw);
+    max-width: 1024px;
+    height: auto;
+  }
+  

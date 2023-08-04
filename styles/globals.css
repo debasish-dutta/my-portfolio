@@ -4,20 +4,23 @@
 
 @layer components {
   /* These styles are for the navigation bar */
-  .text-primary {
-    @apply text-gray-600 dark:text-gray-300;
+  .text-pri {
+    @apply text-light-text-primary dark:text-dark-text-primary;
   }
-
-  .text-active {
-    @apply text-fuchsia-600 dark:text-fuchsia-400;
+  .text-sec {
+    @apply text-light-text-secondary dark:text-dark-text-secondary;
   }
 
   .text-hover {
-    @apply hover:text-fuchsia-600 dark:hover:text-fuchsia-400;
+    @apply hover:text-accent dark:hover:text-accent;
   }
 
-  .text-new {
-    @apply text-green-800 dark:text-green-400 bg-green-300/25 dark:bg-green-400/25;
+  .text-active {
+    @apply text-primary dark:text-primary;
+  }
+  
+  .text-non-active {
+    @apply text-secondary dark:text-secondary;
   }
 
   /* these are for the button with the moving gradient */
@@ -49,12 +52,15 @@
   .main-layout {
     min-height: 100vh;
     min-height: 100dvh;
-
+    background-color: bg-amber-600;
     display: grid;
     grid-template-rows: auto 1fr auto;
   }
-}
 
+  .dark .main-layout {
+    background-color: bg-green-500;
+  }
+}
 /* min-h-screen	grid grid-rows-[auto_1fr_auto] */
 
 /* 

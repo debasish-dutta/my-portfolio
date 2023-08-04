@@ -23,6 +23,10 @@ interface Meta {
 // Nullish coalescing: the `??` operator is a way to “fall back” to
 // a default value when dealing with `null` or `undefined`.
 
+import { BsFillGearFill, BsGraphUp, BsFillPersonLinesFill, BsGlobe2, BsStars } from 'react-icons/bs'
+import { FcBriefcase, FcOpenedFolder } from "react-icons/fc";
+import { GiBullseye, GiRibbonMedal, GiAlienFire } from "react-icons/gi";
+import { HiAcademicCap } from "react-icons/hi";
 // Best approach: create a config file in your project where you export an
 // object containing all configuration values for your project. There, you
 // can set default values for variables coming from the environment. In this way,
@@ -65,26 +69,26 @@ export const menuItems = [
 ];
 
 export const aboutMenuItems = [
-  { path: '/about', name: 'About', new: false },
-  { path: '/about/skills', name: 'Skills', new: false },
-  { path: '/about/stats', name: 'Stats', new: false },
-  { path: '/about/milestones', name: 'Milestones', new: false },
+  { path: '/about', name: 'About', new: false, icon: BsFillPersonLinesFill },
+  { path: '/about/skills', name: 'Skills', new: false, icon: BsFillGearFill  },
+  { path: '/about/stats', name: 'Stats', new: false , icon: BsGraphUp},
+  { path: '/about/profiles', name: 'Profiles', new: false, icon: BsGlobe2 },
 ]
 
 export const workMenuItems = [
-  { path: '/my-work', name: 'My Work', new: false },
-  { path: '/my-work/experience', name: 'Experience', new: false },
-  { path: '/my-work/projects', name: 'Projects', new: false },
-  { path: '/my-work/publications', name: 'Publications', new: false },
+  { path: '/my-work', name: 'My Work', new: false, icon: FcBriefcase },
+  { path: '/my-work/experience', name: 'Experience', new: false, icon: GiAlienFire},
+  { path: '/my-work/projects', name: 'Projects', new: false, icon:FcOpenedFolder },
+  { path: '/my-work/publications', name: 'Publications', new: false, icon: GiAlienFire},
   // { path: '/my-work/certifications', name: 'Certifications', new: false },
   // { path: '/my-work/achivements', name: 'Achivements', new: false },
 ]
 
 export const milMenuItems = [
-  { path: '/milestones', name: 'Milestones', new: false },
-  { path: '/milestones/education', name: 'Education', new: false },
-  { path: '/milestones/certifications', name: 'Certifications', new: false },
-  { path: '/milestones/achivements', name: 'Achivements', new: false },
+  { path: '/milestones', name: 'Milestones', new: false, icon: GiBullseye},
+  { path: '/milestones/education', name: 'Education', new: false, icon: HiAcademicCap},
+  { path: '/milestones/certifications', name: 'Certifications', new: false, icon: GiRibbonMedal},
+  { path: '/milestones/achivements', name: 'Achivements', new: false, icon: BsStars},
 ]
 
 export const footerItems = {

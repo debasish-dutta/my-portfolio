@@ -13,16 +13,15 @@ export default async function Index() {
   return (
     <>
       <div className='border-0 border-red-500 w-full'>
-        <Heading title="Home" content=" From inception to product market fit and beyond,
-          logging is now a solved problem for your product." />
+        <Heading title="Home" content="Ohaiyoo !! This is Debasish Dutta. I'm a Data Scientist and Machine Learning Enthusiast, well versed in programming and love to experiment with different languages and ML libaries. I have been working with Machine learning and Deep learning since 2019. I have built many different ML, DL & TL models and have a well-to-do experience in data analytics and visualization too." />
       </div>
       <div className="border-0 border-amber-200 mx-auto grid gap-4 md:gap-2 xl:gap-6 items-center justify-center mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <Card icon={coffee} heading="Card 1" subheading="This is card 1" />
-        <Card icon={location} heading="Card 2" subheading="This is card 2" />
-        <Card icon={meeting} heading="Card 3" subheading="This is card 3" />
-        <Card icon={noodles} heading="Card 4" subheading="This is card 4" />
-        <Card icon={processor} heading="Card 5" subheading="This is card 5" />
-        <Card icon={web} heading="Card 6" subheading="This is card 6" />
+        <Card icon={location} heading="Guwahati, India" subheading="Currently residing in" />
+        <Card icon={coffee} heading="Coffee + Me = Happiness" subheading="Love Coffee" />
+        <Card icon={processor} heading="Computer Science Research" subheading="This is card 5" />
+        <Card icon={meeting} heading="At times" subheading="Socially Awkward" />
+        <Card icon={noodles} heading="Foodie for life" subheading="Did you say food?" />
+        <Card icon={web} heading="Open Source" subheading="This is card 6" />
       </div>
     </>
   );

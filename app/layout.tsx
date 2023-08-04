@@ -92,7 +92,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable}  border-0 min-h-full bg-white font-sans antialiased transition-colors dark:bg-blue-800`}
+        className={`${inter.variable}  border-0 min-h-full bg-light-background font-sans antialiased transition-colors dark:bg-dark-background`}
       >
         <div className="border-0 border-green-500 mx-2.5 flex flex-col gap-0 px-0 md:my-8 lg:mb-0 mb-4 md:px-0 md:mx-8 lg:mx-10 xl:mx-20 lg:px-0 xl:px-15">
           <Suspense>
@@ -104,11 +104,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <div className="border-0 ml-auto border-red-200 overflow-hidden flex flex-nowrap justify-end col-span-12 rounded-2xl lg:col-span-8">
               <NavBar />
             </div>
-            <div className="border-0 border-red-700 col-span-12 lg:col-span-8 ">
+            <div className="border-0 border-red-700 col-span-12 lg:col-span-8">
               <main className='container m-auto'>
-                <div className="grid grid-cols-12 md:col-span-8 gap-0">
+                <div className="grid grid-cols-12 md:col-span-10 gap-0">
                   {/* Sidebar */}
-                  <div className="border-0 md:col-span-3 col-span-12 text-base text-center rounded-2xl">
+                  <div className="border-0 md:col-span-1 col-span-12 text-base text-center rounded-2xl">
+                    {/* //!sidebar */}
+                    {/* <SideBar /> */}
+                  </div>
+                  <div className="border-0 md:col-span-2 col-span-12 text-base text-center rounded-2xl">
                     {/* //!sidebar */}
                     <SideBar />
                   </div>
@@ -116,6 +120,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                   {/* Children */}
                   <div className="border-0 border-green-300 md:col-span-8 col-span-12 justify-center text-base text-center rounded-2xl">
                     {children}
+                  </div>
+                  <div className="border-0 md:col-span-1 col-span-12 text-base text-center rounded-2xl">
+                    {/* //!sidebar */}
+                    {/* <SideBar /> */}
                   </div>
                 </div>
 

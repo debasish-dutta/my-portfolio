@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 const SkillsPage: FC = () => {
   return (
-    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
+    <section className="border-2 border-blue-500 min-h-screen">
       <MenuNavbar active="Skills"  menuType="about" />
       {/* Add your content here */}
     </section>

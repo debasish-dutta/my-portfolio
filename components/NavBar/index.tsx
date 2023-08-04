@@ -21,7 +21,7 @@ export function NavBar() {
             <button
               type='button'
               onClick={() => setIsOpen(true)}
-              className='flex items-center justify-center w-8 h-8 transition duration-300 text-primary text-hover md:hidden focus:outline-none'
+              className='flex items-center justify-center w-8 h-8 transition duration-300 text-pri text-hover md:hidden focus:outline-none'
             >
               <span className='sr-only'>Navigation</span>
               <svg
@@ -35,7 +35,7 @@ export function NavBar() {
               </svg>
             </button>
           </div>
-      <header className='container rounded-2xl hidden md:flex items-center justify-end bg-white dark:bg-[#09101F] px-4 py-4 mx-auto font-semibold leading-6 lg:py-6'>
+      <header className='border-0 border-blue-500 container rounded-2xl hidden md:flex items-center justify-end bg-light-background dark:bg-dark-background px-4 py-4 mx-auto font-semibold leading-6 lg:py-6'>
         <div className='flex items-center'>
 
           {/*
@@ -64,7 +64,7 @@ export function NavBar() {
           </nav>
         </div>
       </header>
-      <div className='ml-8 my-auto text-base hidden md:block justify-end'>
+      <div className='border-0 border-orange-500 ml-10 my-auto text-base hidden md:block justify-end'>
         <ThemeSwitch />
       </div>
         
@@ -95,11 +95,11 @@ export function NavBar() {
             leaveFrom='opacity-100 scale-100'
             leaveTo='opacity-0 scale-95'
           >
-            <Dialog.Panel className='fixed max-w-xs p-6 ml-4 text-xl font-semibold bg-white rounded-lg shadow-lg top-2 right-2 text-primary dark:bg-slate-800 dark:highlight-white/5'>
+            <Dialog.Panel className='fixed max-w-xs p-6 ml-4 text-xl font-semibold bg-white rounded-lg shadow-lg top-2 right-2 text-pri dark:bg-slate-800 dark:highlight-white/5'>
               <button
                 type='button'
                 onClick={() => setIsOpen(false)}
-                className='absolute flex items-center justify-center w-8 h-8 top-2 right-2 text-primary text-hover focus:outline-none'
+                className='absolute flex items-center justify-center w-8 h-8 top-2 right-2 text-pri text-hover focus:outline-none'
                 tabIndex={0}
               >
                 <span className='sr-only'>Close navigation</span>

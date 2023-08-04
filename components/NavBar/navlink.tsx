@@ -17,7 +17,7 @@ type NavLinkProps = {
 
 export const NavLink: FC<NavLinkProps> = ({ exact, children, ...props }) => {
   const pathname = usePathname();
-  const active = ' text-active'; // class to add when active
+  const active = ' text-accent'; // class to add when active
   const isActive = exact ? pathname === props.href : pathname?.startsWith(props.href);
 
   if (isActive) {

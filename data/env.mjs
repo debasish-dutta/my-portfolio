@@ -18,7 +18,7 @@ export const env = createEnv({
    * 💡 You'll get type errors if these are not prefixed with NEXT_PUBLIC_.
    */
   client: {
-    // NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: z.string().min(11),
+    NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: z.string().min(11),
   },
   /*
    * Due to how Next.js bundles environment variables we need to manually destructure them.
