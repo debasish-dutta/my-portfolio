@@ -22,13 +22,22 @@ export const metadata: Metadata = {
   // },
 };
 
-const StatsPage: FC = () => {
+// const StatsPage: FC = () => {
+//   return (
+//     <section className="border-2 border-blue-500 min-h-screen">
+//       <MenuNavbar active="Stats"  menuType="about" />
+//       {/* Add your content here */}
+//     </section>
+//   );
+// };
+
+// export default StatsPage;
+
+export default async function Stats() {
   return (
-    <section className="border-2 border-blue-500 min-h-screen">
+    <section className="border-2 border-blue-500 min-h-[80vh]">
       <MenuNavbar active="Stats"  menuType="about" />
       {/* Add your content here */}
     </section>
   );
-};
-
-export default StatsPage;
+}

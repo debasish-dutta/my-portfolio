@@ -64,7 +64,7 @@ export function NavBar() {
           </nav>
         </div>
       </header>
-      <div className='border-0 border-orange-500 ml-10 my-auto text-base hidden md:block justify-end'>
+      <div className='border-0 border-emerald-500 ml-10 my-auto text-base hidden md:block justify-end mr-4'>
         <ThemeSwitch />
       </div>
         
@@ -135,7 +135,7 @@ export function NavBar() {
                     </li>
                   );
                 })}
-                <li className='text-base'>
+                <li className='text-base border-0 border-blue-500 mx-auto'>
                   <ThemeSwitch />
                 </li>
               </ul>

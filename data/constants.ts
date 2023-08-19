@@ -45,7 +45,7 @@ export const meta: Meta = {
   title: '',
   description:
     '',
-  themeColor: '##F5E1E6',
+  themeColor: '#F5E1E6',
   backgroundColor: '#F5E1E6',
   og: {
     locale: 'en-US',
@@ -69,7 +69,7 @@ export const menuItems = [
 ];
 
 export const aboutMenuItems = [
-  { path: '/about', name: 'About', new: false, icon: BsFillPersonLinesFill },
+  { path: '/about', name: 'Who am I?', new: false, icon: BsFillPersonLinesFill },
   { path: '/about/skills', name: 'Skills', new: false, icon: BsFillGearFill  },
   { path: '/about/stats', name: 'Stats', new: false , icon: BsGraphUp},
   { path: '/about/profiles', name: 'Profiles', new: false, icon: BsGlobe2 },

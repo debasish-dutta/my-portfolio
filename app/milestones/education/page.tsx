@@ -22,13 +22,23 @@ export const metadata: Metadata = {
   // },
 };
 
-const Achivm: FC = () => {
-  return (
-    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
-      <MenuNavbar active="Education"  menuType="mil" />
-      {/* Add your content here */}
-    </section>
-  );
-};
+// const Achivm: FC = () => {
+//   return (
+//     <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
+//       <MenuNavbar active="Education"  menuType="mil" />
+//       {/* Add your content here */}
+//     </section>
+//   );
+// };
 
-export default Achivm;
+// export default Achivm;
+
+export default async function Achivm() {
+  return (
+        <section className="border-2 border-blue-500 min-h-[80vh]">
+          <MenuNavbar active="Education"  menuType="mil" />
+          {/* Add your content here */}
+        </section>
+      );
+}
+

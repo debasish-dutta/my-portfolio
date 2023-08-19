@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function Work() {
   return (
-    <section className="border-2 border-blue-500 min-h-screen bg-white dark:bg-gray-900">
+    <section className="border-0 border-blue-500 min-h-[80vh] bg-background dark:bg-dark-background">
       <MenuNavbar active="My WOrk" menuType="work" />
 
     </section>

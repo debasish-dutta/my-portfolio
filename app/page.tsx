@@ -13,15 +13,15 @@ export default async function Index() {
   return (
     <>
       <div className='border-0 border-red-500 w-full'>
-        <Heading title="Home" content="Ohaiyoo !! This is Debasish Dutta. I'm a Data Scientist and Machine Learning Enthusiast, well versed in programming and love to experiment with different languages and ML libaries. I have been working with Machine learning and Deep learning since 2019. I have built many different ML, DL & TL models and have a well-to-do experience in data analytics and visualization too." />
+        <Heading title="Home" content="Ohaiyoo !! This is Debasish Dutta." />
       </div>
       <div className="border-0 border-amber-200 mx-auto grid gap-4 md:gap-2 xl:gap-6 items-center justify-center mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card icon={location} heading="Guwahati, India" subheading="Currently residing in" />
         <Card icon={coffee} heading="Coffee + Me = Happiness" subheading="Love Coffee" />
-        <Card icon={processor} heading="Computer Science Research" subheading="This is card 5" />
+        <Card icon={processor} heading="PhD: Passion, Hunger, Dedication" subheading="Coding Epiphanies in" />
         <Card icon={meeting} heading="At times" subheading="Socially Awkward" />
         <Card icon={noodles} heading="Foodie for life" subheading="Did you say food?" />
-        <Card icon={web} heading="Open Source" subheading="This is card 6" />
+        <Card icon={web} heading="Ctrl + Shift + Commit" subheading="Advocating for Open Source" />
       </div>
     </>
   );

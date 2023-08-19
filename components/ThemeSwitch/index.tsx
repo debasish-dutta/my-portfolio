@@ -24,9 +24,17 @@ export const ThemeSwitch = () => {
     return null;
   }
 
+  const toggleTheme = () => {
+    if (theme === 'light') {
+        setTheme('dark');
+    } else {
+        setTheme('light');
+    }
+  };
+
   return (
-    <>
-      <div className='flex justify-between w-20 mx-auto bg-white border-2 border-gray-500 rounded-full dark:bg-gray-300 dark:border-gray-300'>
+      <div className='flex justify-center w-8 h-8 md:h-max md:w-max mx-auto bg-light-background border-2 border-dark-background rounded-full dark:bg-dark-background dark:border-light-background'>
+    {/* <>
         <button
           id='light'
           aria-label='Light Theme'
@@ -37,8 +45,8 @@ export const ThemeSwitch = () => {
           onClick={(e) => setTheme('light')}
         >
           <BsSun />
-        </button>
-        <button
+        </button> */}
+        {/* <button
           id='system'
           aria-label='System Theme'
           className={cn(
@@ -48,8 +56,8 @@ export const ThemeSwitch = () => {
           onClick={(e) => setTheme('system')}
         >
           <BsGear />
-        </button>
-        <button
+        </button> */}
+        {/* <button
           id='dark'
           aria-label='Dark Theme'
           className={cn(
@@ -60,7 +68,19 @@ export const ThemeSwitch = () => {
         >
           <BsMoonStars />
         </button>
-      </div>
-    </>
+          // </> */}
+
+        <button
+            aria-label={`Toggle ${theme === 'light' ? 'Dark' : 'Light'} Theme`}
+            className="hover:transition-all md:w-6 md:h-6 md:p-1 rounded-full text-hover"
+            onClick={toggleTheme}
+        >
+            {theme === 'light' ? (
+              <BsMoonStars />
+              ) : (
+                <BsSun />
+                )}
+        </button>
+        </div>
   );
 };

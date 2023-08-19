@@ -29,11 +29,13 @@ interface AboutPageProps {
   active: string;
 }
 
-export default function About() {
+export default async function About() {
   return (
-    <section className="border-2 border-blue-500 min-h-screen bg-background dark:bg-dark-background">
+    <section className="border-0 border-blue-500 min-h-[80vh] bg-light-background dark:bg-dark-background">
       <MenuNavbar active="" menuType="about" />
-
+      <p>
+      I`m a Data Scientist and Machine Learning Enthusiast, well versed in programming and love to experiment with different languages and ML libaries. I have been working with Machine learning and Deep learning since 2019. I have built many different ML, DL & TL models and have a well-to-do experience in data analytics and visualization too.
+      </p>
     </section>
   );
 }

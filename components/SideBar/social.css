@@ -1,0 +1,69 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.social-icons {
+  padding: 0;
+  margin: 1em;
+}
+
+.social-icons div {
+  display: inline-block;
+  margin: 0 0.15em;
+  position: relative;
+  font-size: 1em;
+}
+
+
+.social-icons svg {
+  @apply text-primary-700;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  transition: all 265ms ease-out;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: "";
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  display: block;
+  /* background: linear-gradient(45deg, #ff003c, #c648c8); */
+  /* @apply bg-gradient-to-bl from-primary to-secondary; */
+  @apply bg-primary-300;
+  transition: all 265ms ease-out;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social-icons a:before {
+    width: 2.5em; 
+    height: 2.5em;
+  }
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover svg {
+  transform: scale(2);
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  /* color: #ff003c; */
+  @apply text-primary-700;
+  /* background: -webkit-linear-gradient(45deg, text-primary, text-secondary); */
+  @apply bg-gradient-to-bl from-primary to-secondary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'components/SideBar/avatar.css';
+@import 'components/SideBar/social.css';
+
 @layer components {
   /* These styles are for the navigation bar */
   .text-pri {

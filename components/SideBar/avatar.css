@@ -1,8 +1,13 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 /* components/styles.module.css */
 :root {
     --border: 5px;
-    --color1: #FC9F5B;
-    --color2: #24A6A8;
+    --color1: #581f18;
+    --color2: #ffc07c;
     --from: 30deg;
     --distance: 46%;
   }
@@ -20,22 +25,28 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: conic-gradient(
+    /* background: conic-gradient(
       from var(--from),
       var(--color1),
       var(--color2) var(--distance),
       transparent var(--distance)
-    );
-    -webkit-mask: radial-gradient(
-      farthest-side,
-      transparent calc(100% - var(--border)),
-      #fff calc(100% - var(--border) + 1px)
-    );
+    ); */
+    @apply bg-gradient-to-tl from-primary from-20% via-secondary via-45% to-transparent to-50% rounded-full;
+
+
     mask: radial-gradient(
       farthest-side,
       transparent calc(100% - var(--border)),
       #fff calc(100% - var(--border) + 1px)
     );
+
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      transparent calc(100% - var(--border)),
+      #fff calc(100% - var(--border) + 1px)
+      /* bg-[conic-gradient(var(--tw-gradient-stops))] from-pink-600 via-gray-100 to-teal-200 */
+    );
+    
 }
   
   .img {

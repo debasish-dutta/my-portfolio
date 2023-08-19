@@ -22,13 +22,24 @@ export const metadata: Metadata = {
   // },
 };
 
-const Profiles: FC = () => {
+// const Profiles: FC = () => {
+//   return (
+//     <section className="border-2 border-blue-500 min-h-screen">
+//       <MenuNavbar active="Profiles"  menuType="about" />
+//       {/* Add your content here */}
+//     </section>
+//   );
+// };
+
+// export default Profiles;
+
+export default async function Profiles() {
   return (
     <section className="border-2 border-blue-500 min-h-screen">
       <MenuNavbar active="Profiles"  menuType="about" />
+
+      hhhh
       {/* Add your content here */}
     </section>
   );
-};
-
-export default Profiles;
+}
